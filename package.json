@@ -1,0 +1,21 @@
+{
+  "name": "cypressxcucumber",
+  "version": "1.0.0",
+  "description": "Cypress Cucumber Automation Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Roxanne",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.1.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.1",
+    "cypress": "^12.14.0",
+    "cypress-xpath": "^2.0.1",
+    "ts-loader": "^9.5.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/support/step_definitions/**/*.js"
+  }
+}
