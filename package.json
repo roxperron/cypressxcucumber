@@ -20,19 +20,21 @@
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^20.1.0",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.1",
+    "cucumber-html-reporter": "^7.1.1",
     "cypress": "^12.14.0",
     "cypress-xpath": "^2.0.1",
+    "multiple-cucumber-html-reporter": "^3.7.0",
     "ts-loader": "^9.5.1"
   },
   "cypress-cucumber-preprocessor": {
     "stepDefinitions": "cypress/support/step_definitions/**/*.js",
     "html": {
       "enabled": true,
-      "output":"cypress/reports/cucumber-html/cucumber-report.html"
+      "output": "cypress/reports/cucumber-html/cucumber-report.html"
     },
-    "messages":{
-       "enabled": true,
-       "output":"cypress/reports/cucumber-ndjson/cucumber-report.ndjson"
+    "messages": {
+      "enabled": true,
+      "output": "cypress/reports/cucumber-html/cucumber-report.ndjson"
     }
   }
 }
