@@ -14,4 +14,5 @@ Scenario Outline:  Valid and invalid login credentials
     Examples:
         | username  | password     | expectedAlert        |
         | webdriver | webdriver123 | validation succeeded |
+        | webdriver | webdriver123 | validation succeeded |
         | bob       | test123      | validation failed    |
