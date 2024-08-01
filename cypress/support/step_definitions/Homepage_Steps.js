@@ -11,7 +11,7 @@ Before(() => {
     cy.log("Executing commands inside homepage steps");
 })
 
-Given(`I navigate to the Webdriveruniversity homepage`, () => {
+Given(`I navigate to the webdriveruniversity homepage`, () => {
     //cy.visit(url);
    homePage.navigate("");
 })
